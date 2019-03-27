@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    background-color: #a0bed0;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+
+}
+
+.cabecalho__navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.menu {
+    list-style: none;
+
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu__item a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+
+}
+
+.apresentacao{
+    background-image: url("../img/foto-banner.jpg");
+    background-size: cover;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    display: block;
+}
+
+.apresetacao__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 90px;
+}
+
+.tituloPrincipal{
+    font-size: 105px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    color: #f8f9fa;
+    text-transform: uppercase;
+
+}
+
+
