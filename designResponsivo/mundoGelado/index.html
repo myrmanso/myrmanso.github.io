@@ -10,68 +10,108 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__navegacao">
-            <ul class="menu">
-                <li class="menu__item"><a href="">Sobre</a></li>
-                <li class="menu__item"><a href="">Destinos</a></li>
-                <li class="menu__item"><a href="">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navegação -->
+    <nav class="navegacao">
+        <ul class="menu">
+            <li class="menu__item"><a href="">Sobre</a></li>
+            <li class="menu__item"><a href="">Destinos</a></li>
+            <li class="menu__item"><a href="">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- Fim da Navegação -->
+
+    <!-- Parte principal do site -->
     <main class="apresentacao">
-        <section class="apresetacao__container">
+        <section class="apresentacao__container">
             <h1 class="tituloPrincipal">O mundo gelado</h1>
-            <div>
-                <p class="paragrafo">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
-                <button>Quero saber mais</button>
+            <div class="container--menor">
+                <h2 class="tituloSecundario">A agência de viagens que te leva aos lugares mais congelantes do planeta.
+                </h2>
+                <button class="btn btn--maior">Quero saber mais</button>
             </div>
         </section>
     </main>
-    <section>
-        <article>
-            <h2>A agência Mundo gelado</h2>
-            <p>Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta, com
+    <!-- Fim da parte principal -->
+
+    <!-- Sobre a empresa -->
+    <section class="sobre">
+        <article class="container--menor">
+            <h2 class="tituloSecundario">A agência Mundo gelado</h2>
+            <p class="paragrafo">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso
+                planeta, com
                 conforto e segurança.
                 Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
                 Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a
                 gente.</p>
         </article>
     </section>
-    <section>
-        <div>
-            <img src="./img/siberia-1.jpg" alt="mulher e criança tocando na arvore na Sibéria.">
-            <article>
-                <h4>Sibéria</h4>
-                <p>O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais
+    <!-- Fim do sobre a empresa -->
+
+    <!-- Comeco dos destinos -->
+
+    <!-- siberia -->
+    <section class="container__destinos">
+        <div class="container--medio">
+            <div class="img--siberia">
+                <img src="./img/siberia-1.jpg" alt="mulher e criança tocando na arvore na Sibéria.">
+            </div>
+            <article class="artigo--siberia">
+                <h4 class="tituloSecundario">Sibéria</h4>
+                <p class="paragrafo">O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o
+                    local habitado mais
                     frio do mundo, a aldeia de Oymyakon.</p>
             </article>
         </div>
     </section>
-    <section>
-        <div>
-            <div>
-                <img src="./img/groenlandia-1.jpg" alt="Dois homens correndo na água">
+    <!-- Mosaico -->
+
+    <section class="container__destinos--mosaico">
+
+        <div class="mosaico">
+
+            <div class="container--mosaico">
+                <img src="./img/groenlandia-1.jpg" alt="Dois homens correndo na água" class="img--mosaico">
+                <div class="artigo">
+                    <article class="artigo--mosaico--left">
+                        <h4 class="tituloSecundario">Groenlândia</h4>
+                        <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população
+                            é
+                            escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo
+                            do
+                            mundo, apenas ultrapassada pela Antártida.
+                            <hr>
+                        </p>
+
+                    </article>
+                </div>
+
             </div>
-            <article>
-                <h4>Groenlândia</h4>
-                <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é
-                    escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do
-                    mundo, apenas ultrapassada pela Antártida.</p>
-                <hr>
-            </article>
-            <article>
-                <h4>Antártida</h4>
-                <p>É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes
-                    do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a
-                    temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
-                <hr>
-            </article>
-            <div>
-                <img src="./img/antartida-1.jpg" alt="Um homem nadando.">
+
+            <div class="container--mosaico">
+                <div class="artigo">
+                    <article class="artigo--mosaico--right">
+                        <h4 class="tituloSecundario">Antártida</h4>
+                        <p class="paragrafo">É o continente mais frio, mais seco, com a maior média de altitude e de
+                            maior
+                            índice de ventos fortes
+                            do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica,
+                            sendo a
+                            temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40
+                            °C
+                            <hr>
+                        </p>
+                    </article>
+                </div>
+                <img src="./img/antartida-1.jpg" alt="Um homem nadando." class="img--mosaico">
             </div>
+
         </div>
+
     </section>
+    <!-- 
+    FORMULÁRIO 
+
+    
     <section>
         <div>
             <div>
@@ -108,16 +148,19 @@
                 <button>Enviar</button>
 
             </div>
-            <div>
-                <a href="#">Telefone: (11) 1234-5678</a>
-                <div>
-                    <a href="#"><img src="./img/twitter.png" alt="icone twitter"></a>
-                    <a href="#"><img src="./img/facebook.png" alt="icone facebook"></a>
-                    <a href="#"><img src="./img/youtube.png" alt="icone youtube"></a>
-                </div>
-            </div>
+            
         </div>
-    </section>
+    </section> -->
+
+    <div>
+        <a href="#">Telefone: (11) 1234-5678</a>
+        <div>
+            <a href="#"><img src="./img/twitter.png" alt="icone twitter"></a>
+            <a href="#"><img src="./img/facebook.png" alt="icone facebook"></a>
+            <a href="#"><img src="./img/youtube.png" alt="icone youtube"></a>
+        </div>
+    </div>
+
     <footer>
         <p>Copyright © Agência Mundo gelado 2018</p>
     </footer>
