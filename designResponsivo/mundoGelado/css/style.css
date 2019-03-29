@@ -28,7 +28,6 @@ body{
     font-family: 'Varela Round', sans-serif;
     font-size: 22px;
     letter-spacing: 1px;
-    color: rgba(255,255,255,0.8)!importan;
 }
 
 .paragrafo{
@@ -101,6 +100,10 @@ body{
     width: 200px;
 }
 
+.container--menor > h2 {
+    font-family: 'Nunito' , sans-serif;
+}
+
 /* Sobre a empresa */
 
 .sobre{
@@ -132,6 +135,7 @@ body{
 /* Siberia  */
 
 .artigo--siberia{
+    color: rgba(000,000,000,.5)!importan;
     width: 30%;
     padding: 0 0 0 50px;
     border-left: 6px solid #829dad
@@ -169,9 +173,10 @@ body{
 
 .artigo{
     width: 50%;
-    color: rgba(255,255,255,0.5)!importan;
+    color: #829dad;
 }
 .artigo--mosaico--left{
+
     padding: 50px;
     width: 80%;
     text-align: left;
@@ -193,10 +198,16 @@ body{
 }
 
 hr{
-    
+    text-align: right;    
     margin:0; 
-    width: 10%;
-    border: 3px solid #829dad
+    width: 40%;
+    border-color: #829dad;
+    border-width: 2px;
+}
+
+.left{
+    margin-left: 60%;
+
 }
 
 
