@@ -1,8 +1,28 @@
+html{
+    scroll-behavior: smooth; /*faz com que a barra de rolagem role suavemente */
+}
+
 body{
     margin: 0;
     font-family: 'Nunito' , sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
 }
+
+ul, li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+a :hover{
+    color: #3c6360;
+}
+
 
 /* Classes comuns  */
 
@@ -48,10 +68,10 @@ body{
     background-color: #a0bed0;
     position: fixed;
     top: 0;
+    z-index: 99; /* atributo que deixa o objeto a cima dos outros. Quanto mais auto o numero mais pra frente do outro elemento */
 }
 
 .menu {
-    list-style: none;
     margin: 0;
     margin-right: 100px;
 }
@@ -61,12 +81,7 @@ body{
     margin: 35PX 25px;
 }
 
-.menu__item > a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 13px;
-
-}
+.menu__item > 
 
 /* Apresentação do site */
 
@@ -120,15 +135,14 @@ body{
 .container__destinos {   
     /* width: 100vw; */
     text-align: left;
-    margin: 90px 90px 0 90px;
+    padding: 100px 100px 0 160px;
 }
 
 .container--medio{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: %;
     margin: 0;
 }
 
