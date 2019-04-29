@@ -1,0 +1,136 @@
+/* Anatomia do CSS */
+body{
+    background-color: rgba(179, 130, 186, 36%);
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.cabecalho{
+    text-align: center;
+}
+
+.cabecalho__titulo{
+    color: #5d1277;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 30px 0;
+}
+.cabecalho__subtitulo{
+    font-size: 30px;
+    color: #5d1277;
+    font-weight: bold;
+    margin: 0;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    width: 100%;                        
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+    text-align: left;
+
+}
+.container__conteudo, .container__ilustracao{
+    width: 40%;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+.conteudo__subtitulo{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.container__conteudo > p{
+    font-size: 20px;
+}
+
+.ilustracao__gif{
+    width: 90%;
+}
+
+/* .conteudo__btn{
+    display: flex:
+    align-items: center;
+    justfy-content: space-around;
+    margin: 0 auto;
+    margin-top: 20px;   
+    
+} */
+
+.conteudo__btn--roxo{
+    background-color: #5d1277;
+    padding: 20px;
+    border: 1px solid #5d1277;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.conteudo__btn--transparente{
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #5d1277;
+    color: #5d1277;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .cabecalho{
+        width:100%;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%;                         */
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;  
+    }
+
+     .container__conteudo, .container__ilustracao{
+        /* padding: 10%; */
+        width: 70%;
+    } 
+
+    .container__ilustracao{
+        margin-top: 5%;
+    } 
+}
+
+ @media (max-width: 420px){
+    .cabecalho__titulo{
+        font-size: 25px;
+    }
+
+    .cabecalho__subtitulo{
+        font-size: 20px;
+    }
+
+    .conteudo__btn{
+        display: block;
+        width: 100%;
+    }
+    .conteudo__btn--roxo, .conteudo__btn--transparente{
+        width: 100%;      
+        margin-bottom: 2.5%;
+    }
+
+      
+}
