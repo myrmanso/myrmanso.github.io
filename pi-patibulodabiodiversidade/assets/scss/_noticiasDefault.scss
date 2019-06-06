@@ -1,0 +1,20 @@
+.materia{
+    margin: 7rem 0;
+
+    .materiaTitulo{
+        @media(max-width:$mobile){
+            font-size: 2rem;
+        }
+    }
+}
+
+.materia__img--bg{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    @media(max-width: $tablet-ver){
+        widows: 100%;
+        height: 100%;
+    }
+}
+

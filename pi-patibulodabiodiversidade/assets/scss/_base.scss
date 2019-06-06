@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-default;
+    font-size: $default-font-size;
+    margin: 0;
+    color: $color-default-darker;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+    font-size: $font-size-text;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: $font-size-text;
+}
+
+p{
+    font-size: $font-size-text;
+}
+
+section{
+    margin: 7rem 0;
+}
+
+label{   
+    font-size: $font-size-text;
+    margin: 1% 0;
+}
+
+input{
+    font-size: $font-size-text;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;    
+    
+    @media (max-width: $mobile) {
+        width: 90%;
+    }
+}
+
+.container--flex{
+    @include flex(center, space-between, row);
+    @media  (max-width: $tablet-ver){
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.titulo{
+    color:  $color-primary-dark;
+    font-size: $font-size-title-primary;
+    text-align: center;
+    font-family: $font-title;
+    font-weight: bold;
+}
+
+.spanMarcaTexto{
+    position: relative;
+
+    .marcaTexto{
+        width: 100%;
+        display: inline-block;
+        background-color: $color-primary-light;
+        height: 1rem;
+        position: absolute;
+        z-index: -1;
+        bottom: 0.65rem;
+    }
+    .marcaTexto--white{
+        width: 100%;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 1rem;
+        position: absolute;
+        z-index: 1;
+        bottom: 0.75rem;
+    }
+}
+
+.spanMarcaTextoBold {
+    
+    @media (max-width: $tablet-hor) {
+    font-weight: bold;
+    }
+
+    .marcaTextoBold {
+        @media (max-width: $tablet-hor) {
+            display: none;
+        }
+    }
+}

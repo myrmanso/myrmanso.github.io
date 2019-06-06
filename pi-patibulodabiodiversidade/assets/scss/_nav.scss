@@ -1,0 +1,91 @@
+.nav {
+    background-color: $color-primary;
+    color: $color-neutral;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    font-size: $font-size-text;
+    cursor: pointer;
+
+
+
+    .navContainer {
+        @include flex(center, space-between, row);
+
+        .navLogo {
+            display: none;
+            margin: 0.625rem 0;
+        }
+        
+        .navLogo.ativo {
+            
+            display: block;
+        }
+        
+        img {
+            width: 11.25rem;
+            @media (max-width: $mobile) {
+                width: 7.5rem;
+                padding-top: 0.3125rem;
+            }
+        }
+        .navMenu {
+            margin-top: 1.375rem;
+            padding: 0;
+
+            @media (max-width: $tablet-ver){   
+                display: none;
+            }
+        
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+            }
+        
+            li + li {
+                margin-left: 1rem;
+            }
+        }
+
+        .navContainer--menuHamburguer {
+            display: none;
+            text-align: right;
+            @media (max-width: $tablet-ver){
+              display: block;
+            } 
+            
+        }
+    }   
+
+    .menuDropdown {
+        display: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.2);
+
+        li {
+            border: none;
+            text-align: right; 
+            font-size: $font-size-footer;
+            padding: 0.5rem 1.5rem 0.5rem 2.5rem;
+            background-color: $color-primary;
+        }
+
+        li + li {
+            border-top: 1px solid $color-default;
+        }
+    }
+
+    .navTablet {
+        @media (max-width: $tablet-ver){
+            width: 85%;
+        }
+    }  
+}
+
+
+.navSombra {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+

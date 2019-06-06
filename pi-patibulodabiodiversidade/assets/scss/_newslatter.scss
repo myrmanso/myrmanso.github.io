@@ -1,0 +1,47 @@
+.newsletter {
+  .newsletterForm {
+    width: 100%;
+    .newsletterLabel {
+      margin: 2rem 0;
+      text-align: center;
+    }
+  }
+}
+
+.newsletterInput {
+  background-color: $color-primary-light;
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  border: none;
+  text-align: center; 
+  @media (max-width: $tablet-ver){
+      width: 100%;
+  }  
+}
+
+.newsletterInput:focus{
+  outline: none;
+}
+
+
+
+
+
+.newsletterBtn {
+  @include button($font-size-text, 0.5rem, 0.5rem, $color-primary-dark, $white);
+  width: 25%;
+
+  @media (max-width: $tablet-ver) {
+    width: 50%;
+    margin: 1rem auto;
+  }
+}
+
+.newsletterBtn:focus {
+  outline: none;
+}
+.newsletterBtn:active {
+  transform: scale(0.9);
+  box-shadow: 0.8px 1px 1px 0.8px rgba(0, 0, 0, 0.16);
+}

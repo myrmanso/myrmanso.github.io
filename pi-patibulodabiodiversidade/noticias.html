@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <title>Patíbulo da diversidade</title>
+</head>
+
+<body>
+    <!--cabeçalho-->
+    <nav class="nav navSombra">
+        <div class="container">
+            <div class="navContainer">
+                <img calss="navLogo logo" src="./assets/img/logo.png" alt="">
+
+                <ul class="navMenu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="noticias.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <div class="navContainer--menuHamburguer">
+                    <i class="fas fa-bars menuHamburguer"></i>
+                </div>
+            </div><!--/navContainer-->
+
+        </div><!--/container-->
+        <ul class="menuDropdown">
+            <li><a class="menuDropdown--link" href="index.html">Home</a></li>
+            <li><a class="menuDropdown--link" href="noticias.html">Notícias</a></li>
+            <li><a class="menuDropdown--link" href="#footer">Contato</a></li>
+        </ul>
+    </nav>
+    <!--/nav-->
+    <!--inicio main-->
+    <section class="noticiaPrincipal">
+        <div class="container">
+            <div class="container--flex">
+                <div class="noticiaPrincipal__img">
+                    <a href="noticia04.html">
+                        <img src="./assets/img/Animais_extincao_arara_azul.jpg" alt="">
+                    </a>
+                </div>
+                <div class="noticiaTitulo">
+                    <h1>                   
+                        <a href="noticia04.html" class="titulo noticiaTitulo">
+                            Um milhão de espécies de plantas e animais estão ameaçadas de extinção, aponta ONU   
+                        </a>
+                    </h1>
+                </div>
+                
+            </div><!--/container--flex-->
+        </div><!--/container-->
+    </section><!--/noticiaPrincipal-->
+    <section class="noticiasOutras noticiasOutras--bg">
+        <div class="container">
+            <div class="container--flex">
+                <div class="noticiasOutras__cards">
+                    <div class="noticiasOutras__img">
+                        <img src="./assets/img/noticia3LOGO.jpg" alt="">
+                    </div>
+                    <a class="noticiasOutras__cards__texto" href="noticia03.html">
+                        Em dois dias, 134 tartarugas de espécie ameaçada de extinção nascem na Praia do Futuro
+                    </a>
+                </div>
+                <div class="noticiasOutras__cards">
+                    <div class="noticiasOutras__img">
+                        <img src="./assets/img/Noticia1LOGO.jpg" alt="">
+                    </div>
+                    <a class="noticiasOutras__cards__texto" href="noticia01.html">
+                        Mesmo considerado o país mais rico em biodiversidade, o Brasil contém animais presentes nas regiões brasileiras que estão em extinção e podem desaparecer completamente em poucas décadas.
+                    </a>
+                </div>
+                <div class="noticiasOutras__cards">
+                    <div class="noticiasOutras__img">
+                        <img src="./assets/img/Noticia2LOGO.jpg" alt="">
+                    </div>
+                    <a class="noticiasOutras__cards__texto" href="noticia02.html">
+                            Crescimento econômico e mudança climática ameaçam 1 milhão de espécies, alertam cientistas
+                    </a>
+                </div>
+            </div><!--/conatainer--flex-->
+        </div><!--/container-->
+    </section><!--/noticiasOutras-->
+    <!--/main-->
+    <!--newsletter-->
+        <section class="newsletter">
+            <div class="container">
+                <h2 class="titulo">
+                    <span class="spanMarcaTexto">
+                        <span class="marcaTexto"></span>
+                        Newsletter
+                    </span>
+                </h2>
+                <form class="newsletterForm">
+                    <div class="newsletterLabel">
+                        <label  for="email-usuario">Para receber mais notícias se inscreva na nossa Newsletter!</label>
+                    </div>
+                    <div class="container--flex">
+                        <input class="newsletterInput" type="email" name="email-usuario" id="" placeholder="nome@email.com">
+                        <input class="newsletterBtn"type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    <!--/newsletter-->
+    <!--footer-->
+    <section class="footerBg" id="contato">
+            <div class="container container--flex">
+                <div class="footerBox--conteudo">
+                
+                    <ul class="footerRedes">
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="./assets/img/icones/fb-icon.png" alt="icone do facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img class="iconInsta" src="./assets/img/icones/instagram-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img src="./assets/img/icones/yt-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img class="iconInsta" src="./assets/img/icones/email-icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                            
+                </div>
+                <div class="footerBox">
+                    <h3 class="footerBoxTitle">Sobre nós</h3>
+                    <p>
+                        Patíbulo da biodiversidade e tem como objetivo maior a divulgação de notícias, fatos, curiosidades sobre o tema ‘Declínio contemporâneo da biodiversidade mundial’, que é um fenômeno que envolve a extinção ou significativa redução populacional de inúmeras espécies selvagens, algo que pode impactar diretamente na biodiversidade animal do mundo.
+                    </p>
+                </div>
+            </div><!--/container-->
+    </section>
+    <footer class="footerCopyright">
+        <p>Patibulo de diversidade © 2019. Desenvolvido por <a href="https://github.com/myrmanso">Mayara Cristina Manso</a> e Matheus Oliveira</p>
+    </footer>  
+    <!--/footer-->
+
+</body>
+</html>
